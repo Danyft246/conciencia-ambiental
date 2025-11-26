@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proyecto</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div id="header"></div>
+
+<section class="section">
+  <div class="section-content">
+    <div class="text">
+      <h2>Sobre el Proyecto</h2>
+      <p>
+        El Plan de Integración de la Conciencia Ambiental en la Vida Universitaria es una
+        iniciativa creada por estudiantes de la Escuela Profesional de Ingeniería de Sistemas.
+        Su propósito es promover hábitos sostenibles y fortalecer la educación ambiental dentro
+        de la comunidad estudiantil.
+      </p>
+      <p>
+        Este proyecto surge ante la necesidad de que los futuros profesionales comprendan el
+        impacto ambiental de sus decisiones y desarrollen una cultura orientada al cuidado del
+        entorno.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-content">
+    <div class="text">
+      <h2>Objetivos Principales</h2>
+
+      <p><strong>Objetivo general:</strong><br>
+        Fomentar la formación y conciencia ambiental en los estudiantes de la Escuela Profesional de Ingeniería de Sistemas.
+      </p>
+
+      <p><strong>Objetivos específicos:</strong></p>
+      <ul>
+        <li>Integrar prácticas ecológicas en la vida cotidiana de los estudiantes.</li>
+        <li>Sensibilizar a la comunidad universitaria sobre los problemas ambientales actuales.</li>
+        <li>Promover el acceso a información ambiental confiable.</li>
+        <li>Fomentar la participación en actividades ecológicas y colaborativas.</li>
+        <li>Desarrollar recursos digitales que faciliten la educación ambiental continua.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-content">
+    <div class="text">
+      <h2>Justificación</h2>
+      <p>
+        La educación ambiental es esencial para formar profesionales capaces de responder a los
+        desafíos globales actuales. La limitada difusión de información y la falta de hábitos
+        ecológicos dificultan el desarrollo de una cultura ambiental universitaria.
+      </p>
+      <p>
+        Integrar la conciencia ambiental en la vida diaria de los estudiantes de Ingeniería de
+        Sistemas contribuye tanto a su crecimiento personal como al desarrollo de futuros
+        profesionales responsables y comprometidos con la sostenibilidad.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-content">
+    <div class="text">
+      <h2>Metodología del Proyecto</h2>
+
+      <h3>1. Campaña Digital Ecológica Interna</h3>
+      <ul>
+        <li>Investigación para el contenido de los afiches.</li>
+        <li>Diseño de afiches en Canva.</li>
+        <li>Creación de una página en redes sociales.</li>
+        <li>Distribución de afiches mediante códigos QR.</li>
+      </ul>
+
+      <h3>2. Jornada de Intercambio de Conocimientos Verdes</h3>
+      <ul>
+        <li>Investigación para las mini-exposiciones.</li>
+        <li>Preparación de presentaciones.</li>
+        <li>Ejecutar las mini-exposiciones.</li>
+      </ul>
+
+      <h3>3. Desarrollo de un Minisitio Web Ecológico</h3>
+      <ul>
+        <li>Investigación y análisis de contenido.</li>
+        <li>Planificación de la estructura del sitio.</li>
+        <li>Desarrollo del sitio web.</li>
+        <li>Pruebas, optimización y publicación.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-content">
+    <div class="text">
+      <h2>Impacto Esperado</h2>
+      <p>
+        A corto plazo: incremento en la sensibilización ambiental, acceso a información educativa
+        y mayor participación estudiantil.
+      </p>
+      <p>
+        A largo plazo: consolidación de una cultura ambiental universitaria, adopción de hábitos
+        sostenibles y desarrollo de iniciativas ecológicas permanentes lideradas por estudiantes.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+    <div id="footer"></div>
+
+<script>
+  async function load(id, file) {
+     const html = await fetch(file).then(res => res.text());
+     document.getElementById(id).innerHTML = html;
+   }
+
+   load("header", "header.html");
+   load("footer", "footer.html"); 
+</script>
+</body>
+</html>
